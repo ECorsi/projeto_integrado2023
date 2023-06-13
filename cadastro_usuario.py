@@ -73,12 +73,12 @@ janela.config(bg=background)
 janela.resizable(width=False, height=False)
 
 # Icone da janela
-janela.iconbitmap(r"G:\Meu Drive\Python\PI\Imagens\icone.ico")
+janela.iconbitmap("Imagens/icone.ico")
 
 # Fundo da janela
 frame=Frame(janela,bg="red")
 frame.pack(fill="y")
-imagem_fundo=PhotoImage(file=r"G:\Meu Drive\Python\PI\Imagens\cadastro.png")
+imagem_fundo=PhotoImage(file="Imagens/cadastro.png")
 Label(frame,image=imagem_fundo).pack()
 
 acesso_admin= Entry(frame, width=17, fg="red", border="0", font=("Arial Bold", 20), show="*")
@@ -161,20 +161,20 @@ def esconder():
 
 
 button_mode=True
-esconder_senha=PhotoImage(file=r"G:\Meu Drive\Python\PI\Imagens\esconder.png")
-mostrar_senha=PhotoImage(file=r"G:\Meu Drive\Python\PI\Imagens\mostrar.png")
+esconder_senha=PhotoImage(file="Imagens/esconder.png")
+mostrar_senha=PhotoImage(file="Imagens/mostrar.png")
 botao_olho=Button(frame, image=esconder_senha, bg="#fff", bd=0, command=esconder)
 botao_olho.place(x=450,y=405)
 
 # Botão CADASTRAR
-cadastrar_img=PhotoImage(file=r"G:\Meu Drive\Python\PI\Imagens\bcadastrar2.png")
+cadastrar_img=PhotoImage(file="Imagens/bcadastrar2.png")
 botao_cadastrar=Button(janela, image=cadastrar_img, bg="#cddff6", bd=0, command=cadastrar)
 # botao_cadastrar=Button(janela,text="CADASTRAR", bg="#4b74bc", fg="white",width=12, height=1, font=("Microsoft YaHei UI Light", 18), bd=0, command=cadastrar)
 botao_cadastrar.place(x=460, y=510)
 
 #Botao voltar p/ tela de login
 
-voltar_img=PhotoImage(file=r"G:\Meu Drive\Python\PI\Imagens\voltar.png")
+voltar_img=PhotoImage(file="Imagens/voltar.png")
 botao_voltar=Button(janela, image=voltar_img, bg="#cddff6", bd=0, command=login)
 botao_voltar.place(x=45, y=45)
 
