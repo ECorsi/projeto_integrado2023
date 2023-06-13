@@ -70,12 +70,12 @@ janela.config(bg=background)
 janela.resizable(width=False, height=False)
 
 # Icone da janela
-janela.iconbitmap(r"G:\Meu Drive\Python\PI\Imagens\icone.ico")
+janela.iconbitmap("Imagens/icone.ico")
 
 # Fundo da janela
 frame=Frame(janela,bg="red")
 frame.pack(fill="y")
-imagem_fundo=PhotoImage(file=r"G:\Meu Drive\Python\PI\Imagens\janela.png")
+imagem_fundo=PhotoImage(file="Imagens/janela.png")
 Label(frame,image=imagem_fundo).pack()
 
 # Entrada do usuário
@@ -123,25 +123,25 @@ def esconder():
 
 
 button_mode=True
-esconder_senha=PhotoImage(file=r"G:\Meu Drive\Python\PI\Imagens\esconder.png")
-mostrar_senha=PhotoImage(file=r"G:\Meu Drive\Python\PI\Imagens\mostrar.png")
+esconder_senha=PhotoImage(file="Imagens/esconder.png")
+mostrar_senha=PhotoImage(file="Imagens/mostrar.png")
 botao_olho=Button(frame, image=esconder_senha, bg="#fff", bd=0, command=esconder)
 botao_olho.place(x=750,y=405)
 
 
 # Botao de Login
-login_img=PhotoImage(file=r"G:\Meu Drive\Python\PI\Imagens\blogin.png")
+login_img=PhotoImage(file="Imagens/blogin.png")
 botao_login=Button(janela, image=login_img, bg="#cddff6", bd=0, command=verificar_login)
 # botao_login=Button(janela,text="LOGIN", bg="#4b74bc", fg="white",width=10, height=1, font=("arial italic", 16), bd=0, command=verificar_login)
 botao_login.place(x=525, y=490)
 
 
 # Botão Cadastrar-se
-registrar_img=PhotoImage(file=r"G:\Meu Drive\Python\PI\Imagens\bcadastrar.png")
+registrar_img=PhotoImage(file="Imagens/bcadastrar.png")
 botao_cadastrar=Button(janela, image=registrar_img, bg="#cddff6", bd=0, command=cadastrar)
 botao_cadastrar.place(x=558, y=550)
 
-regras_img=PhotoImage(file=r"G:\Meu Drive\Python\PI\Imagens\bregras.png")
+regras_img=PhotoImage(file="Imagens/bregras.png")
 botao_regras=Button(janela, image=regras_img, bg="#0056e3", bd=0, command=regras)
 botao_regras.place(x=958, y=550)
 
