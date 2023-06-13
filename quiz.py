@@ -79,7 +79,7 @@ class Game:
             self.end_game()
 
 def save_score(user_name, score):
-    caminho = "G:\Meu Drive\Python\PI\pontuacao.txt"
+    caminho = "pontuacao.txt"
     try:
         with open(caminho, "a") as arquivo:
             arquivo.write(f"{user_name},{score}\n")
@@ -108,7 +108,7 @@ root.geometry("1250x700")
 root.resizable(width=False, height=False)
 
 #imagem de fundo
-imagem = "G:\Meu Drive\Python\PI\Imagens\minigame.png"
+imagem = "Imagens/minigame.png"
 background = tk.PhotoImage(file=imagem)
 
 
@@ -186,7 +186,7 @@ def sair():
     root.destroy()
     import menu_principal
 
-sair_img=tk.PhotoImage(file=r"G:\Meu Drive\Python\PI\Imagens\sair.png")
+sair_img=tk.PhotoImage(file="Imagens/sair.png")
 botao_sair=tk.Button(root, image=sair_img, bg="#0557e4", bd=0, command=sair)
 botao_sair.place(x=1100, y=470)
 
