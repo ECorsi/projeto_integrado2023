@@ -14,12 +14,12 @@ regras.resizable(width=False, height=False)
 
 
 # Icone da janela
-regras.iconbitmap(r"G:\Meu Drive\Python\PI\Imagens\logoprojetom.ico")
+regras.iconbitmap("Imagens/logoprojetom.ico")
 
 # Fundo da janela
 frame=Frame(regras,bg="red")
 frame.pack(fill="y")
-imagem_fundo=PhotoImage(file=r"G:\Meu Drive\Python\PI\Imagens\regras.png")
+imagem_fundo=PhotoImage(file="Imagens/regras.png")
 Label(frame,image=imagem_fundo).pack()
 
 def voltar():
@@ -28,7 +28,7 @@ def voltar():
 
 
 
-voltar_img=PhotoImage(file=r"G:\Meu Drive\Python\PI\Imagens\voltar.png")
+voltar_img=PhotoImage(file="Imagens/voltar.png")
 botao_voltar=Button(regras, image=voltar_img, bg="#cddff6", bd=0, command=voltar)
 botao_voltar.place(x=45, y=45)
 
