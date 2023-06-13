@@ -7,7 +7,7 @@ from tkinter import PhotoImage
 def ler_pontuacoes():
     pontuacoes = []
     try:
-        with open("G:\Meu Drive\Python\PI\pontuacao.txt", "r") as arquivo:
+        with open("pontuacao.txt", "r") as arquivo:
             for linha in arquivo:
                 nome, pontuacao = linha.strip().rsplit(",", maxsplit=1)
                 pontuacoes.append((nome, int(pontuacao)))
@@ -27,10 +27,10 @@ def exibir_leaderboard():
     leaderboard.resizable(width=False, height=False)
 
     # Icone da janela
-    leaderboard.iconbitmap(r"G:\Meu Drive\Python\PI\Imagens\logoprojetom.ico")
+    leaderboard.iconbitmap("Imagens/logoprojetom.ico")
 
     # Carregar a imagem de fundo
-    imagem_fundo = PhotoImage(file=r"G:\Meu Drive\Python\PI\Imagens\ranking.png")
+    imagem_fundo = PhotoImage(file="Imagens/ranking.png")
 
     # Criar um widget Label para exibir a imagem de fundo
     label_fundo = tk.Label(leaderboard, image=imagem_fundo)
@@ -79,7 +79,7 @@ def exibir_leaderboard():
         leaderboard.destroy()
         import menu_principal
 
-    sair_img=PhotoImage(file=r"G:\Meu Drive\Python\PI\Imagens\voltar2.png")
+    sair_img=PhotoImage(file="Imagens/voltar2.png")
     botao_sair=tk.Button(leaderboard, image=sair_img, bg="#cddff6", bd=0, command=sair)
     botao_sair.place(x=45, y=45)
 
